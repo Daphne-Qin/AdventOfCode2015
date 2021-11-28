@@ -17,6 +17,9 @@ public class Problem25 {
     System.out.println("Answer: " + result);
   }
 
+  //================================================================================
+  // INCREMENTCOORDS - FINDS NEXT COORDINATE
+  //================================================================================
   private static int[] incrementCoords(int[] coords) {
     // format: {row, column} -> coords[0] is row, coords[1] is column
     if (coords[0] == 1) {
