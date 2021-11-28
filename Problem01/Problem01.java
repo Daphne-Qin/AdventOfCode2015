@@ -2,7 +2,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Problem1 {
+public class Problem01 {
   public static int findFloor(String dir) {
     int floor = 0;
     for (int i = 0; i < dir.length(); i++) {
@@ -43,10 +43,10 @@ public class Problem1 {
     }
 
     try {
-      if (Integer.parseInt(args[1]) == 1) System.out.println(findFloor(dir));
-      if (Integer.parseInt(args[1]) == 2) System.out.println(findBasement(dir));
+      if (args[1].equals("1")) System.out.println(findFloor(dir));
+      if (args[1].equals("2")) System.out.println(findBasement(dir));
     } catch (ArrayIndexOutOfBoundsException e) {
-      System.out.println("Invalid syntax: use \"java Problem1 [filename] [1/2]\"");
+      System.out.println("Invalid syntax: use \"java Problem01 [filename] [1/2]\".");
     }
   }
 }

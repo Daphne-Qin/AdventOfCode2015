@@ -8,9 +8,9 @@ public class Problem10 {
 
     try {
       int repeat;
-      if (Integer.parseInt(args[0]) == 1) { // part 1
+      if (args[0].equals("1")) { // part 1
         repeat = 40;
-      } else if (Integer.parseInt(args[0]) == 2) { // part 2
+      } else if (args[0].equals("2")) { // part 2
         repeat = 50;
       } else {
         repeat = 0;

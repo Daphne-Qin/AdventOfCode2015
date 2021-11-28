@@ -3,7 +3,7 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Wrapper {
+public class Problem02 {
   // calculates surface area of a cuboid
   private static int surfaceArea(int l, int w, int h) {
     int smallest = Math.min(l*w, w*h);
@@ -56,10 +56,10 @@ public class Wrapper {
     }
 
     try {
-      if (Integer.parseInt(args[1]) == 1) System.out.println(wrappingPaper(nums));
-      if (Integer.parseInt(args[1]) == 2) System.out.println(ribbon(nums));
+      if (args[1].equals("1")) System.out.println(wrappingPaper(nums));
+      if (args[1].equals("2")) System.out.println(ribbon(nums));
     } catch (ArrayIndexOutOfBoundsException e) {
-      System.out.println("Invalid syntax: use \"java Wrapper [filename] [1/2]\"");
+      System.out.println("Invalid syntax: use \"java Problem02 [filename] [1/2]\".");
     }
   }
 }

@@ -3,7 +3,7 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Problem5 {
+public class Problem05 {
   //================================================================================
   // PART 1
   //================================================================================
@@ -84,21 +84,21 @@ public class Problem5 {
       int result = 0;
 
       // part 1
-      if (Integer.parseInt(args[1]) == 1) {
+      if (args[1].equals("1")) {
         for (int i = 0; i < str.size(); i++) {
           if (naughtyNice1(str.get(i))) result++;
         }
       }
 
       // part 2
-      if (Integer.parseInt(args[1]) == 2) {
+      if (args[1].equals("2")) {
         for (int i = 0; i < str.size(); i++) {
           if (naughtyNice2(str.get(i))) result++;
         }
       }
       System.out.println(result);
     } catch (ArrayIndexOutOfBoundsException e) {
-      System.out.println("Invalid syntax: use \"java Problem5 [filename] [1/2]\"");
+      System.out.println("Invalid syntax: use \"java Problem05 [filename] [1/2]\".");
     }
   }
 }

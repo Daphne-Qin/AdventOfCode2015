@@ -81,7 +81,7 @@ public class Problem14 {
       System.out.println(result);
 
     } catch (ArrayIndexOutOfBoundsException e) {
-      System.out.println("Invalid syntax: use \"java Problem14 [filename] [1/2]\"");
+      System.out.println("Invalid syntax: use \"java Problem14 [filename] [1/2]\".");
     }
   }
 }
