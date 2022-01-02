@@ -22,7 +22,8 @@ The original problems can be found [here](https://adventofcode.com/2015 "Advent 
 3. **Problem 20 Part 1**: 15m 26.441s (15m 9.086s when slightly optimized)
 
 P10.2 in all its glory:
-![image](72m35.891s.png)
+
+![image](Problem10/72m35.891s.png)
 
 ### Future Plans
 If I were to come back to this repo and edit some of the solutions, I would definitely:
